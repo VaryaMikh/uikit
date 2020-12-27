@@ -1,0 +1,38 @@
+.dropdown {
+	position:  relative;
+	margin-right: 20px;
+}
+
+.dropdown__menu {
+	display: none;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	padding: 5px 0;
+	border-radius: 12px;
+	background-color: var(--c-gray);
+	width: max-content;
+	overflow: hidden;
+}
+
+.dropdown__menu > li > button,
+.dropdown__menu > li > a {
+	display: block;
+	width: 100%;
+	padding: 6px 10px;
+	background-color: var(--c-gray);
+	color: var(--c-text);
+	cursor: pointer;
+	border: none;
+	font-size: 14px;
+	text-align: left;
+}
+
+.dropdown__menu > li > button:hover,
+.dropdown__menu > li > a:hover {
+	background-color: var(--c-gray-hover);
+}
+
+.dropdown.-active .dropdown__menu {
+	display: block;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UiKit</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="./assets/styles/base.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/btn.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/dropdown.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/variables.css">
+</head>
+<body>
+	<div class="dropdown -active">
+        <button class="button dropdown__toggler" onclick="toggleDropdown(event)">Press me</button>
+
+        <ul class="dropdown__menu">
+            <li>
+                <button class="dropdown__menu-item">Do the dance</button>
+            </li>
+            <li>
+                <button class="dropdown__menu-item">Choo-Choo</button>
+            </li>
+            <li>
+                <a class="dropdown__menu-item" href="https://wikipedia/">Leave the party</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="button dropdown__toggler" onclick="toggleDropdown(event)"> Daft Punk Dropdown </button>
+
+        <ul class="dropdown__menu">
+            <li>
+                <button class="dropdown__menu-item">Rob</button>
+            </li>
+            <li>
+                <button class="dropdown__menu-item">Robot Rock</button>
+            </li>
+            <li>
+                <button class="dropdown__menu-item">Robot Rock</button>
+            </li>
+            <li>
+                <button class="dropdown__menu-item">Robot Rock</button>
+            </li>
+        </ul>
+    </div>
+
+	<script type="text/javascript" src="./assets/scripts/main.js"></script>
+</body>
+</html>
